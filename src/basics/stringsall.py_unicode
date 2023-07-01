@@ -1,0 +1,129 @@
+import string
+print 'helo world'
+#Both """ (or) ''' used for big paragraph (or) script inside script,very powerful tool
+#print 'don't know' # SyntaxError: invalid syntax,since its already closed
+print "don't know"
+print 'don\'t know'
+#print 'don\\'t know' # SyntaxError: invalid syntax
+print '\don\\\'t know'
+print 'my name is "venu" '
+print '"yes",he said'
+print '\"yes\",he said'
+print 'first line\nsecondline'
+all_symbols = ''' #~!@#$%^&*()_+=-{}|\:;"'[]?/><.,` '''
+print all_symbols
+print "venu.parve@gmail.com"
+print "hdash\\ndakdn"
+print r"hdash\\ndakdn" # using r at the beginning make \ as its raw string o/p in this line is hdash\\ndakdn
+print "---------"
+print """\
+ndkasd
+dasdkj
+"""
+print "venu is grea" + 10*"t" # venu is greatttttttttt
+print "ven" "usakthi" # venusakthi
+print 'ven' 'usakthi' # venusakthi
+var = "hello"
+#print var "world" # it will end up with syntax error
+print var+"world" # hello world
+text = ('dewbdioewdjbewdb'
+'bweubuewbyewhiewoh')
+print text # o/p is dewbdioewdjbewdbbweubuewbyewhiewoh
+##########
+#indexing & slicing
+##########
+#General tips : LF to RT : 0,1,2.....
+#RT to lf : -1,-2....
+word = 'python'
+#LTR
+print word[0] # p
+print word[1] # y
+print word[2] # t
+print word[5] # n
+#RTL
+print word[-1] # n
+print word[-2] # o
+print word[-3] # h
+print word[-6] # p
+"""
+------------------
+0   1   2  3  4  5
+------------------
+p   y   t  h  o  n
+------------------
+-6  -5  -4 -3  -2 -1
+"""
+print "#######Slicing logic below#########"
+#Slicing:
+#Slicing logic will used to get substring of it
+print word[0:2] # py
+print word[2:0] # empty string
+print word[:2] # py
+print word[2:] # thon
+print word[:] # python
+#print word[] # syntax error
+print "#######Slicling negative values######"
+print word[-1:0] # Empty values not in proper order,hence empty
+print word[0:-1] # pytho
+print word[-1:-3] # Empty values not in proper order,hence empty
+print word[1:0] # Empty values not in proper order,hence empty
+print word[0:1] # p
+print "valeu",word[0:1:2]# p
+print "valeu",word[3:4:5]# h
+print "valeu-3",word[0:3:5]# p
+print "valeu-4",word[0:1:2]# p
+print "-----*******------"
+######################
+#SLICING LOGIC below
+"""
+--------------------------------------
+0     1       2      3     4      5     6
+---------------------------------------
+|  p  |    y  |   t  |  h  |   o  |  n  |
+---------------------------------------
+-6    -5     -4     -3    -2     -1    
+---------------------------------------
+#Note : Length of slice is difference of indices,example word[1:3] = 3-1 =2 = "yt"
+"""
+#print word[43] # Index error : out of range
+print word[3:43] # 'hon' print from 3 indices to 43,hence o/p is 'hon'
+print word[43:] # prints empty string
+########STRINGS ARE IMMUTABLE#######
+print "---------"
+#Note : String are IMMUTABLE,replacement using index is not possible
+#word[0] = "T" # TypeError: 'str' object does not support item assignment
+print "T"+word[1:6] # o/p is "Tython"
+#o/p for above code below
+print word[:2] + "py" # o/p is pypy
+s = 'he   wd' #here 2 space,hence total = 7
+s = 'he wd' # space 1,hence total = 5
+print len(s) # Here including space,total length is 5
+
+#######################
+# Unicode Strings
+#######################
+print u'Hello world' # unicode mode - to handle unicode characters 0 to 256 # o/p is Hello world
+print u'Hello\u0030world !' # Hello0world ! unicode provide access to all registered unicode codecs ( coders & decoders)
+print ur'Hello\\u0030world !' # unicode -raw mode (ur) used to print lot of blackslashes Hello\\u0030world !
+print ur'Hello\\\u0030world !' # Hello\\0world !
+print u"abc"
+print str(u"abc")
+print ur"®†åååå".encode('utf-8') # it will print \xc3\xc4\xc5
+to get decode text use like below
+print unicode( '\xc3\xc4\xc5','utf-8')
+########OUTPUT BELOW########
+"""
+helo world
+don't know
+don't know
+\don\'t know
+my name is "venu"
+"yes",he said
+"yes",he said
+first line
+secondline
+ #~!@#$%^&*()_+=-{}|\:;"'[]?/><.,`
+venu.parve@gmail.com
+hdash\ndakdn
+"""
+#have to cover this as well https://docs.python.org/2/library/stdtypes.html#typesseq

@@ -1,0 +1,722 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fmodern\fcharset0 Courier;
+\f3\fnil\fcharset0 Consolas;\f4\fswiss\fcharset0 Helvetica-Light;\f5\fnil\fcharset0 Verdana;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red27\green29\blue31;\red26\green26\blue26;
+\red245\green245\blue247;\red12\green99\blue153;\red242\green239\blue236;\red210\green50\blue85;\red135\green135\blue135;
+\red148\green108\blue71;\red133\green0\blue67;\red85\green138\blue3;\red93\green108\blue125;\red38\green38\blue38;
+\red255\green255\blue255;\red0\green0\blue0;\red85\green142\blue40;\red241\green241\blue241;\red63\green105\blue30;
+\red217\green11\blue0;\red241\green241\blue241;\red58\green97\blue173;\red58\green97\blue173;\red46\green82\blue150;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww22800\viewh13440\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1.why python?\
+-Easy to read\
+-No need of compilation,since \expnd0\expndtw0\kerning0
+Python is an interpreted/interactive language\kerning1\expnd0\expndtw0 \
+-\expnd0\expndtw0\kerning0
+it has high-level data types built in\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\slmult1\qj\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+the high-level data types allow you to express complex operations in a single statement;\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+statement grouping is done by indentation instead of beginning and ending brackets;\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+no variable or argument declarations are necessary.
+\fs32 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+-Data type free,no need to declare variables data type : x = 10 ,x = \'93hello\'94,it will work\
+- Time wasting in matter of style,will go away,no need of purely braces\
+-Suties for OOPs,classes along with its attributes n inheritance\
+-Functions are first class objects\
+-\cf2 \expnd0\expndtw0\kerning0
+Memory management: C++ doesn't have garbage collection, and encourages use of raw pointers to manage and access memory.\cf0 \kerning1\expnd0\expndtw0 \
+\
+Disadvantage:\
+-Noticed speed of execution less than compiler languages like C/C++,but improving in pypy\
+-No support of multiline functions ( lambda contains only one expression)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs30 \cf3 \expnd0\expndtw0\kerning0
+\
+
+\f0\fs24 2.Python & Multi-threading:\
+it won\'92t support multi-threading,you can use package to apply it\
+but in case of any i/p from user during multi-threading,leads to waiting & delay issue\
+\
+\cf2 3,How do you keep track of different versions of your code? we can use git hub/svn\
+4.Monkey patching ? -  : since its changing function behavior\
+\pard\pardeftab720\sl384\partightenfactor0
+\cf4 the term 
+\b monkey patch
+\b0  only refers to dynamic modifications of a class or module at runtime, motivated by the intent to 
+\b patch
+\b0 existing third-party code as a workaround to a bug or feature which does not act as you desire\
+\
+5.
+\f2\fs30 \cf2 \cb5 *args - to send multiple no of arguments to function like list() tuple() & dictionary(),\
+\
+**kwargs - To pass value for dictionary\
+Example:\
+\pard\pardeftab720\sl480\partightenfactor0
+\cf6 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 f\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ):
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 print\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\pard\pardeftab720\sl384\partightenfactor0
+
+\f0\fs24 \cf2 \cb1 \shad0 \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f3\fs30 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 l 
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 [\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ] *l = to access its values
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+t 
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 4\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 5\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 6\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ) 
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+d 
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \{\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 'a'\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 :\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 7\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 'b'\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 :\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 8\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 'c'\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 :\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 9\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \} = **d = for values & *d = keys\
+
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ()
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0                     
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 3) \{\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "groovy"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0            
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 3, 'groovy') \{\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 a
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 b
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 c
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0               
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # () \{'a': 1, 'c': 3, 'b': 2\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 a
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 b
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 c
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 zzz
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf12 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "hi"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0      
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # () \{'a': 1, 'c': 3, 'b': 2, 'zzz': 'hi'\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 a
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 b
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 c
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf11 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 3\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0         
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 3) \{'a': 1, 'c': 3, 'b': 2\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 l
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 d
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0                    
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 3) \{'a': 7, 'c': 9, 'b': 8\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 t
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 d
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0                    
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (4, 5, 6) \{'a': 7, 'c': 9, 'b': 8\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 t
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0                    
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 4, 5, 6) \{\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 q
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf12 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "winning"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 d
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0           
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # () \{'a': 7, 'q': 'winning', 'c': 9, 'b': 8\} # here pointer concept comes into picture
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+f
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 1\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 2\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 t
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 q
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf12 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "winning"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 d
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0    
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # (1, 2, 4, 5, 6) \{'a': 7, 'q': 'winning', 'c': 9, 'b': 8\}
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\
+\pard\pardeftab720\sl600\partightenfactor0
+
+\f4\fs36 \cf2 \cb1 \shad0 6.What do these mean to you: 
+\f2\fs30 \cb5 @classmethod
+\f4\fs36 \cb1 , 
+\f2\fs30 \cb5 @staticmethod
+\f4\fs36 \cb1 , 
+\f2\fs30 \cb5 @property
+\f4\fs36 \cb1 ?\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f2\fs30 \cf6 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 class
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 MyClass\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 object
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ):
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0     
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 __init__\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ):
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 _some_property 
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "properties are nice"
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 _some_other_property 
+\f2 \cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "VERY nice"
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 normal_method\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ):\cf13 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # undecorated methods work like normal, they get the current instance (self) as the first argument
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 print\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "calling normal_method(\{0\},\{1\})"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 format
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ))
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    @classmethod \
+    
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 class_method\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ): 
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 #
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 class methods always get the class as the first argument
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 print\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "calling class_method(\{0\},\{1\})"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 format
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ))
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    @staticmethod\
+    
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 static_method\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ): \cf13 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # static methods have no arguments except the ones you pass in when you call them
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 print\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "calling static_method(\{0\},\{1\})"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 format
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ))
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    @property\
+    
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 def
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  
+\f2 \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 some_property\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 *
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,\cf10 \cb1 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 **
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ): \cf13 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # properties are a way of implementing getters and setters. It's an error to explicitly call them
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f2 \cf13 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 # "read only" attributes can be specified by creating a getter without a setter (as in some_other_property)
+\f3 \cf0 \cb7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\pard\pardeftab720\sl440\partightenfactor0
+\cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0         
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 print\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "calling some_property getter(\{0\},\{1\},\{2\})"\cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 format
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 args
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ,
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 kwargs
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ))
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        
+\f2 \cf6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 return
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  self
+\f2 \cf9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .
+\f3 \cf0 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 _some_property\
+\
+7.Bree concepts:\
+    class Tree(object):\
+	def __init__(self,val)://__init__ for object initialization..similarly __repr__ for representation\
+		self.node = val\
+	def append(self,*args,**kwargs):\
+		Plist.append(*args,**kwargs)\
+ 	def print_Tree(self,*args,**kwargs):\
+		print(self.node)\
+		for item in Plist:\
+		       print "Node \{\}".format(item.node)\
+#Create objects with respective node name string inside it,append all inside root-->1-->2-->3\
+#under 3-->4-->5-->6.....etc\
+root = Tree("root")\
+child1 = Tree("child1")\
+child2 = Tree("child2")\
+child3 = Tree("child3")\
+child4 = Tree("child4")\
+child5 = Tree("child5")\
+child6 = Tree("child6")\
+child7 = Tree("child7")\
+child8 = Tree("child8")\
+child9 = Tree("child9")\
+child10 = Tree("child10")\
+child11 = Tree("child11")\
+root.append(child1)\
+root.append(child2)\
+root.append(child3)\
+child1.append(child4)\
+child1.append(child5)\
+child2.append(child6)\
+child2.append(child7)\
+root.print_Tree(root)//calling here\
+\
+8.Garbage collector:\
+Garbage collector: Obja = A(),obja.A=5,objb = obja; suppose del obja,still the reference obj exists,but here garbage collector take care of those,hence python calculates no of references for particular object,
+\f4\fs36 \cf14 \cb15 \outl0\strokewidth0 \strokec14 \shad0 If a reference count goes to zero then the associated object is no longer live and the memory allocated to that object can be freed up for something else\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl600\partightenfactor0
+\ls2\ilvl0\cf14 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 Certain heuristics are used to speed up garbage collection. For example, recently created objects are more likely to be dead. As objects are created, the garbage collector assigns them to generations. Each object gets one generation, and younger generations are dealt with first.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 \
+\pard\tx720\pardeftab720\sl600\partightenfactor0
+\cf14 9.PYTHON HOME  = PYTHON PATH(mod/lib) + PYTHON STARTUP(source code)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl600\partightenfactor0
+\cf2 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf14 \cb15 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 \
+\pard\tx720\pardeftab720\sl600\partightenfactor0
+\cf14 \cb1 10.PYTHON PATH \'97>where to locate modules\'97>Include python libraries \
+11.PYTHON STARTUP \'97> pythonic.py\'97>file containing python source code,executed every time start the interpreter \'97>contains commands to load utilities\
+12.Is Python is case sensitive programming language?\'97\'97\'97YES\
+13. Supported data types? : long,int,float,str, \
+5 standard types : Numbers/String/List/tuple/dict
+\f5\fs30 \cf16 \strokec16 \uc0\u8232 
+\fs28 \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\fs30 \cf17 \cb18 What is the output of print str if str = 'Hello World!\'92?\'97\'97>print \'93hello word\'94\cf16 \cb1 \
+\cf19 \cb18 What is the output of print str[0] if str = 'Hello World!'? \'97->H\cf16 \
+\cf17 What is the output of print str[2:5] if str = 'Hello World!\'92?\'97>llo // give more attention\cf16 \
+\cf17 What is the output of print str[2:] if str = 'Hello World!'? -llo world!\cf16 \
+\cf17 What is the output of print str * 2 if str = 'Hello World!'? - Hello world hello world\cf16 \
+\cf17 What is the output of print str + "TEST" if str = 'Hello World!'? -Hello world!Test\cf16 \
+What is the output of print list if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?\
+What is the output of print list[0] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?\
+What is the output of print list[1:3] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?\
+What is the output of print list[2:] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?\
+What is the output of print tinylist * 2 if tinylist = [123, 'john']?\
+What is the output of print list + tinylist * 2 if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ] and tinylist = [123, 'john']?\
+What are tuples in Python?\
+What is the difference between tuples and lists in Python?\
+What is the output of print tuple if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?\
+What is the output of print tuple[0] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?\
+What is the output of print tuple[1:3] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?\
+What is the output of print tuple[2:] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?\
+What is the output of print tinytuple * 2 if tinytuple = (123, 'john')?\
+What is the output of print tuple + tinytuple if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 ) and tinytuple = (123, 'john')?\
+What are Python's dictionaries?\
+How will you create a dictionary in python?\
+How will you get all the keys from the dictionary?\
+How will you get all the values from the dictionary?\
+\
+How will you convert a string to an int in python?-\cf20  
+\b int(x,[base])
+\b0  - int(string) //similarly do it for all elements in list using map\
+res = [map(int,x) for x in List]\cf16 \
+How will you convert a string to a long in python? - \cf20 long(str) //similarly 
+\b \cb15 long(x [,base] ) 
+\b0 - Converts x to a long integer.\cf16 \cb18 \
+\cf19 How will you convert a string to a float in python? - float(str)\cf16 \
+\cf17 How will you convert a object to a string in python? -str(obj)\cf16 \
+\cf20 How will you convert a object to a regular expression in python?- r\'92obj\'92,it will be like
+\b  repr(x)
+\b0 \cf16 \
+\cf20 How will you convert a String to an object in python? -Obj(str) // 
+\b eval(str) 
+\b0 returns an object\cf16 \
+\cf20 How will you convert a string to a tuple in python? - 
+\b tuple(s)
+\b0 \cf16 \
+\cf20 How will you convert a string to a list in python? - 
+\b list(str)
+\b0  \'97> [\'91h\'92,\'92e\'92,\'92l\'92,\'92l\'92,\'920\'92]\cf16 \
+\cf20 How will you convert a string to a set in python? - 
+\b set(\'93hello\'94)
+\b0 \cf16 \
+\cf20 How will you create a dictionary using tuples in python? - 
+\b dict(tuple)
+\b0 ,it must have key & values\cf16 \
+\cf20 How will you convert a string to a frozen set in python? - 
+\b frozenset(\'91hello\'92)
+\b0 \cf16 \
+\cf20 How will you convert an integer to a character in python?- 
+\b chr(5) - integer to char
+\b0 \cf16 \
+\cf20 How will you convert an integer to an unicode character in python? -
+\b unichr(\'925\'92)
+\b0 \cf16 \
+\cf20 How will you convert a single character to its integer value in python?-
+\b ord(\'914\'92)
+\b0 \cf16 \
+\cf20 How will you convert an integer to hexadecimal string in python?-
+\b hex(x)
+\b0 \cf16 \
+\cf20 How will you convert an integer to octal string in python? - 
+\b oct(x)
+\b0 \cf16 \
+\cf17 What is the purpose of ** operator?  - power\cf16 \
+\cf19 What is the purpose of // operator? - floor division - 5/2 = 2//where 0.5 will be removed\cf16 \
+\cf20 What is the purpose of is operator? to compare,variables on both side of operator points to same object\cf16 \
+\cf17 What is the purpose of not in operator? - substring not in string:\cf16 \
+\cf17 What is the purpose break statement in python? - 
+\b to break -completly break the loop
+\b0  completely i == 5 ;  o/p is 1,2,3,4\
+What is the purpose continue statement in python? - 
+\b continue - \cb21 \outl0\strokewidth0 skip & continue ;
+\b0  i == 5 ; 1,2,3,4,6,7,8\cb18 \outl0\strokewidth0 \strokec16 \
+What is the purpose pass statement in python? - 
+\b pass - don\'92t do anything just pass ;
+\b0 don\'92t want to execute any code during that iteration,just pass,o/p is 1,2,3,4,pass stmt here,5,6,7,8\cf16 \
+How can you pick a random item from a list or tuple?\
+How can you pick a random item from a range?\
+How can you get a random number in python?\
+How will you set the starting value in generating random numbers?\
+How will you randomizes the items of a list in place?\
+\cf20 How will you capitalizes first letter of string? - str[0].upper()//
+\b \cb15 capitalize()- first letter capitalize
+\b0  also do the same\cb18 \
+How will you check in a string that all characters are alphanumeric? -
+\b isalnum()
+\b0 \
+\cf17 How will you check in a string that all characters are digits? 
+\b \cb21 \outl0\strokewidth0 isdigit()
+\b0 \cb18 \outl0\strokewidth0 \strokec16 \
+\cf20 How will you check in a string that all characters are in lowercase? 
+\b islower()
+\b0 \cf16 \
+\cf20 How will you check in a string that all characters are numerics? 
+\b isnumeric()
+\b0 \cf16 \
+\cf20 How will you check in a string that all characters are whitespaces? - 
+\b isspace()
+\b0 \cf16 \
+\cf20 How will you check in a string that it is properly titlecased? - 
+\b istitle()
+\b0 \cf16 \
+\cf20 How will you check in a string that all characters are in uppercase? [item for item in string if item == str.
+\b isupper()
+\b0  else count =1 if count != 0 print \'93all r upper\'94 else \'93not\'94 ]\cf16 \
+\cf20 How will you merge elements in a sequence? -
+\b join(seq)
+\b0 \cf16 \
+\cf17 How will you get the length of the string? len()\cf16 \
+\cf20 How will you get a space-padded string with the original string left-justified to a total of width columns?-
+\b \cb15 ljust(width[, fillchar]) 
+\b0 \uc0\u8722  Returns a space-padded string with the original string left-justified to a total of width columns.\cf16 \cb18 \
+\cf20 How will you convert a string to all lowercase? str.tolower()//
+\b str.lower()
+\b0 \cf16 \
+\cf20 How will you remove all leading whitespace in string? str.replace(\'93 \'93,\'94\'94)//
+\b lstrip() leading white spaces()
+\b0 \cf16 \
+\cf20 How will you get the max alphabetical character from the string? [item for item in str: if item.isalpha: res.append(item) ] or 
+\b max(str)
+\b0 \cf16 \
+\cf20 How will you get the min alphabetical character from the string?//
+\b min(str)
+\b0 \cf16 \
+\cf20 How will you replaces all occurrences of old substring in string with new string? str(var).replace(\'93hello\'94,\'94world\'94)//
+\b \cb15 replace(old, new [, max]) 
+\b0 \cf16 \cb18 \
+\cf20 How will you remove all leading and trailing whitespace in string? 
+\b str.strip()\cf16 \
+
+\b0 \cf20 How will you change case for all letters in string? [ item for item in str: if item.lower(): item = item.upper() else item = item.lower()  print item] or 
+\b \cb15 swapcase()
+\b0 \cf16 \cb18 \
+\cf20 How will you get titlecased version of string? title()-\cb15 title() \uc0\u8722  Returns 
+\b "titlecased" version of string
+\b0 , that is, 
+\b all words begin with uppercase and the rest are lowercase\cf16 .\cb18 \
+\cf20 How will you convert a string to all uppercase? [ item for item in str: item = item.upper()]
+\b0 \cf16 \
+
+\b \cf20 How will you check in a string that all characters are decimal?isdecimal()
+\b0 \cf16 \
+
+\b \cf20 What is the difference between del() and remove() methods of list? del using key value & remove without knowing list element
+\b0 \cf16 \
+What is the output of len([1, 2, 3])?\'97\'97 3\
+What is the output of [1, 2, 3] + [4, 5, 6]?\'97\'97[1,2,3,4,5,6]\
+What is the output of ['Hi!'] * 4? \'97 [\'91hi\'92,\'92hi\'92,\'92hi\'92,\'92hi\'92]\
+What is the output of 3 in [1, 2, 3]? \'97true\
+What is the output of for x in [1, 2, 3]: print x? \'97 1,2,3\
+What \cf20 is the output of L[2] if L = [1,2,3]? \'97 3 // 
+\b Reverse order [ -3,-2,-1]  & straight [0,1,2]
+\b0  index position from list\cf16 \
+\cf17 What\cf16  \cf17 is the output of L[-2] if L = [1,2,3]? \'97 2\
+What is the output of L[1:] if L = [1,2,3]? \'97 2,3\
+How will you compare two lists? cmp(list1,list)\
+How will you get the length of a list? \'97len(list)\
+\
+How will you get the max valued item of a list? -Max(list)\
+How will you get the min valued item of a list?- MIn(list)\cf16 \
+\cf20 How will you get the index of an object in a list? - for index,item in enumerate(list): print index,item (or) 
+\b list.index(obj)
+\b0 \cf16 \
+\cf20 How will you insert an object at given index in a list? - 
+\b list.insert(\'913,\'92,4)\cf16 \
+
+\b0 \cf20 How will you remove last object from a list? 
+\b list.pop()\
+
+\b0 How will you remove an object from a list? - 
+\b \cb15 list.remove(obj)
+\b0 \cf16  \cb18 \
+\cf20 How will you reverse a list? - 
+\b list.reverse()
+\b0 \cf16 \
+\cf20 How will you sort a list?- 
+\b list.sort([func])
+\b0 -\cb15 Sorts objects of list, 
+\b use compare func if given
+\b0 .\
+\
+\pard\pardeftab720\sl390\partightenfactor0
+
+\f2\fs26 \cf15 \cb22 \strokec15 List Tricks:\
+def extendList(val, list=[]):\
+    list.append(val)\
+    return list\
+\
+list1 = extendList(10)\
+list2 = extendList(123,[])\
+list3 = extendList('a')\
+\
+print "list1 = %s" % list1 - Output is [10,\'92a\'92],hence before print statements all 3 List1,list2,list3 called,hence only time default() \cf1 \cb23 \outl0\strokewidth0 list=[] is created and appended with the values\cf15 \cb22 \outl0\strokewidth0 \strokec15 \
+print "list2 = %s" % list2 - Here we are passing default list,hence its o/p is [123],this case only work as expected\
+print "list3 = %s" % list3 - \cf1 \cb23 \outl0\strokewidth0 Output is [10,\'92a\'92]
+\fs48 \cf15 \cb24 \outl0\strokewidth0 \strokec15 \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f5\fs30 \cf16 \cb18 \strokec16 \
+\pard\tx720\pardeftab720\sl600\partightenfactor0
+
+\f4\fs36 \cf14 \cb1 \strokec14 \
+\
+\pard\tx400\tqr\tx9600\pardeftab720\ri743\sb120\sa120\partightenfactor0
+
+\f1\b\fs20 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 1.
+\b0\fs22 	
+\b\fs20 Introduction	
+\b0\fs22 \
+\pard\tx800\tqr\tx9600\pardeftab720\li200\ri743\partightenfactor0
+
+\fs20 \cf0 1.1
+\fs22 	
+\fs20 Purpose	
+\fs22 \
+
+\fs20 1.2
+\fs22 	
+\fs20 Scope	
+\fs22 \
+
+\fs20 1.3
+\fs22 	
+\fs20 Reference	
+\fs22 \
+\pard\tx400\tqr\tx9600\pardeftab720\ri743\sb120\sa120\partightenfactor0
+
+\b\fs20 \cf0 2.
+\b0\fs22 	
+\b\fs20 Test Environment Details
+\b0\fs22 \
+\pard\tx800\tqr\tx9600\pardeftab720\li200\ri743\partightenfactor0
+
+\fs20 \cf0 2.1
+\fs22 	
+\fs20 Test Environment Requirements	
+\fs22 \
+
+\fs20 2.2
+\fs22 	
+\fs20 Test Environment Setup	
+\fs22 \
+
+\fs20 2.3
+\fs22 	
+\fs20 Test Environment Sharing	
+\fs22 \
+
+\fs20 2.4
+\fs22 	
+\fs20 Test Environment Limitations and Mitigations	
+\fs22 \
+
+\fs20 2.5
+\fs22 	
+\fs20 Test Environment Maintenance	
+\fs22 \
+\pard\tx400\tqr\tx9600\pardeftab720\ri743\sb120\sa120\partightenfactor0
+
+\b\fs20 \cf0 3.
+\b0\fs22 	
+\b\fs20 Test Data Details
+\b0\fs22 \
+\pard\tx800\tqr\tx9600\pardeftab720\li200\ri743\partightenfactor0
+
+\fs20 \cf0 3.1
+\fs22 	
+\fs20 Test Data Requirements	
+\fs22 \
+
+\fs20 3.2
+\fs22 	
+\fs20 Test Data Sharing	
+\fs22 \
+
+\fs20 3.3
+\fs22 	
+\fs20 Test Data Collection/Generation	
+\fs22 \
+
+\fs20 3.4
+\fs22 	
+\fs20 Test Data Limitations and Migitations	
+\fs22 \
+
+\fs20 3.5
+\fs22 	
+\fs20 Test Data Maintenance	
+\fs22 \
+\pard\tx400\tqr\tx9600\pardeftab720\ri743\sb120\sa120\partightenfactor0
+
+\b\fs20 \cf0 4.
+\b0\fs22 	
+\b\fs20 Backup
+\b0\fs22 \
+
+\b\fs20 5.
+\b0\fs22 	
+\b\fs20 Training
+\b0\fs22 \
+\pard\tx800\tqr\tx9600\pardeftab720\li200\ri743\partightenfactor0
+
+\fs20 \cf0 5.1
+\fs22 	
+\fs20 Training Identified	
+\fs22 \
+
+\fs20 5.2
+\fs22 	
+\fs20 Training Materials and Approach\
+\
+\
+
+\b 6.Roles & Responsibilities:
+\b0 	
+\fs22 \
+\pard\tx400\tqr\tx9600\pardeftab720\ri743\sb120\sa120\partightenfactor0
+\cf0 \
+\pard\tx720\pardeftab720\sl600\partightenfactor0
+
+\f4\fs36 \cf14 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 \
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f0\fs24 \cf2 \outl0\strokewidth0 \
+\pard\pardeftab720\sl384\partightenfactor0
+\cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs30 \cf3 \
+}

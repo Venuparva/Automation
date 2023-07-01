@@ -1,0 +1,43 @@
+Llist = []
+Rlist = []
+Mlist = []
+Plist = []
+class Tree(object):
+	def __init__(self,val):
+		self.node = val
+	def left_branch(self):
+		Llist = self
+	def append(self,*args,**kwargs):
+		Plist.append(*args,**kwargs)
+	def right_branch(self):
+		Rlist = self
+	def middle_branch(self):
+		Plist = self
+ 	def print_Tree(self,*args,**kwargs):
+		Mlist.append(*args.**kwargs)
+		for item in flist:
+			print "Node {}".format(self)
+root = Tree("root")
+child1 = Tree("child1")
+child2 = Tree("child2")
+child3 = Tree("child3")
+child4 = Tree("child4")
+child5 = Tree("child5")
+child6 = Tree("child6")
+child7 = Tree("child7")
+child8 = Tree("child8")
+child9 = Tree("child9")
+child10 = Tree("child10")
+child11 = Tree("child11")
+root.append(child1)
+root.append(child2)
+root.append(child3)
+child1.append(child4)
+child1.append(child5)
+child2.append(child6)
+child2.append(child7)
+child3.append(child8)
+child3.append(child9)
+child6.append(child10)
+child6.append(child11)
+root.print_Tree()
