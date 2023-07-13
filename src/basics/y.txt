@@ -1,6 +1,0 @@
-(line)1-first
-(line)4-foruth
-(line)5-fifth
-(line)6-sixth
-(line)7-seventh
-(line)8-eight
