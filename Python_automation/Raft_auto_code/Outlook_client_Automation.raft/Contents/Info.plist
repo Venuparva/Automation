@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>5FA94E1C-2C71-43BE-A0E8-75107004736B</string>
+	<key>CFBundleName</key>
+	<string>Outlook_client_Automation</string>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+</dict>
+</plist>

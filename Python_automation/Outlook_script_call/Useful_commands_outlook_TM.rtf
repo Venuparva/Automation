@@ -1,0 +1,124 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red38\green38\blue38;\red255\green255\blue255;
+\red42\green93\blue160;\red15\green112\blue3;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c20784\c44706\c69020;\csgenericrgb\c5882\c43922\c1176;}
+\margl1440\margr1440\vieww28080\viewh16320\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \CocoaLigature0 \
+
+\f1\b Working syntax for framework integration:\
+\
+Login Mails:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0\fs22 \cf2 /usr/local/bin/raft -f /Users/namithashetty/Documents/MacOSX_automation/Raft_auto_code/LoginMail.raft environ iCloud1 userName ic1_dgn1_auto_osx@icloud.com password iCloud12345
+\f1\b\fs26 \cf2 \
+\
+COPY mails:\
+\
+$ ./python_script_call_3.sh -a iCloud1 -b CopyMails -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_dgn1_auto_osx@icloud.com -j Inbox -k copytest4 -l INBOX -m Trash\
+\
+SEND mails:\
+\
+./python_script_call_3.sh -a iCloud1 -b SendMail -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_jun19_dgn3@icloud.com -f ic1_may22_dgn1@icloud.com -g ic1_dgn2_aug1@icloud.com\
+\
+SAVE TO SENT mails:\
+\
+./python_script_call_3.sh -a iCloud1 -b 
+\fs24 SaveToSent
+\fs26  -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_jun19_dgn3@icloud.com -f ic1_may22_dgn1@icloud.com -g ic1_dgn2_aug1@icloud.com\
+\
+SAVE TO DRAFTS mails:\
+\
+./python_script_call_3.sh -a iCloud1 -b 
+\fs24 SaveToDraft
+\fs26  -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_jun19_dgn3@icloud.com -f ic1_may22_dgn1@icloud.com -g ic1_dgn2_aug1@icloud.com\
+\
+DELETE FROM FOLDER mails:\
+\
+$ ./python_script_call_3.sh -a iCloud1 -b CopyMails -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_dgn1_auto_osx@icloud.com -p 1 -q Inbox\
+\
+DELETE FROM TRASH mails:\
+\
+$ ./python_script_call_3.sh -a iCloud1 -b CopyMails -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -e ic1_dgn1_auto_osx@icloud.com -p 1 \
+\
+CREATE Folder:\
+\
+./python_script_call_3.sh -a iCloud1 -b CreateFolder -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 -n Test123 -o Test123rename\
+\
+RENAME Folder::\
+\
+./python_script_call_3.sh -a iCloud1 -b RenameFolder -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 n Test123 -o Test123rename\
+\
+DELETE Folder::\
+\
+./python_script_call_3.sh -a iCloud1 -b DeleteFolder -c ic1_dgn1_auto_osx@icloud.com -d iCloud12345 n Test123 -o Test123rename\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0 \
+\
+/usr/local/bin/raft -f ~/Documents/Outlook_Automation/Raft_auto_code/Outlook_client_Automation.raft environ 1 from_addr ic1_may22_dgn1@icloud.com password avaq-kdyv-ssjq-nvek to_addr ic1_dgn1_auto_osx@icloud.com cc_addr ic1_may22_dgn1@icloud.com bcc_addr ic1_dgn2_apr1@icloud.com subj "OSX : 29-Nov-18 : Single To/cc/bcc test mail" body "This is body of mail -Dgn" attachment "Raft_auto_code/sunset.jpg" searchHeader  "Subj" searchText  "OSX : 29-Nov-18 : Single To/cc/bcc test mail" folder INBOX Count 4 newFolder test1 sourceDefaultFolder INBOX DestinationDefaultFolder Archive sourceCustomFolder copysource1 DestinationCustomFolder copytest4 cleanupFolder Trash\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 raft -f OSXMail_Client_Automation.raft from_addr {\field{\*\fldinst{HYPERLINK "mailto:ic1_jun19_dgn3@icloud.com"}}{\fldrslt \cf5 ic1_jun19_dgn3@icloud.com}} to_addr {\field{\*\fldinst{HYPERLINK "mailto:ic1_dgn1_aug1@icloud.com"}}{\fldrslt \cf5 ic1_dgn1_aug1@icloud.com}} cc_addr {\field{\*\fldinst{HYPERLINK "mailto:ic1_may22_dgn1@icloud.com"}}{\fldrslt \cf5 ic1_may22_dgn1@icloud.com}} bcc_addr {\field{\*\fldinst{HYPERLINK "mailto:ic1_dgn2_apr1@icloud.com"}}{\fldrslt \cf5 ic1_dgn2_apr1@icloud.com}} subj "OSX : 26-Nov-18 : Single To/cc/bcc test mail" body "This is body of mail -Dgn"\cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+raft -f /Users/namithashetty/Documents/MacOSX_automation/Raft_auto_code/SendMail.raft from_addr ic1_jun19_dgn3@icloud.com to_addr ic1_dgn1_aug1@icloud.com cc_addr ic1_may22_dgn1@icloud.com bcc_addr ic1_dgn2_apr1@icloud.com subj "OSX : 26-Nov-18 : Single To/cc/bcc test mail" body "This is body of mail -Dgn" attachment "/User/Venu/Documents/1821_ic2_smtp.rtf"\
+\
+\
+./python_script_call_3.sh -1 iCloud1 -2 SendMail -3 ic1_jun19_dgn3@icloud.com -4 \\!Cloud1234 -5 ic1_jun19_dgn3@icloud.com -6 ic1_may22_dgn1@icloud.com -7 ic1_dgn2_aug1@icloud.com\
+\
+\
+Account_configure_result = Account_remove_result = Send_mail_result = Folder_selection_result = Delete_folder_result = Search_Mail_result = newFolder = DestinationCustomFolder = DestinationDefaultFolder = Count = oldFolder = renameFolder = flag_count = read_folder = read_count = from_addr = to_addr = cc_addr = bcc_addr = subject = folder = body_of_mail = attachment_file_path = userName = password = searchHeader = searchText = Check_delivery_result = Save_to_Sent_search_result = Create_folder_result = Rename_folder_result = UnFlag_msgs_result = Flag_msgs_result = Save_To_Draft_result = Delete_msgs_before_copy_result = Forward_mail_result = Reply_mail_result = Delete_msgs_result = Read_MailbodyText_result = Copy_msgs_result = Read_msgs_result = UnRead_msgs_result = draft_subject = Change_environ_result = current_time = cleanupFolder = imap_list_cmd = Clean_up_account_result = imap_del_Msg_cmd = imap_copy_Msg_cmd = imap_flag_Msg_cmd = imap_read_Msg_cmd = draft_sub_time = existing_count = sourceCustomFolder= sourceDefaultFolder = ''' '''\
+\
+\
+global Account_configure_result, Account_remove_result, Send_mail_result, Folder_selection_result, Search_Mail_result, from_addr, to_addr, cc_addr, bcc_addr, subject, folder, body_of_mail, attachment_file_path, userName, password, searchHeader, searchText, Check_delivery_result, Delete_msgs_result, Delete_folder_result, draft_subject, Copy_msgs_result, cleanupFolder, imap_list_cmd,Clean_up_account_result,draft_sub_time,existing_count,imap_del_Msg_cmd,sourceCustomFolder,sourceDefaultFolder,newFolder,orig_subject,DestinationCustomFolder,DestinationDefaultFolder,Count,oldFolder,renameFolder,flag_count,read_folder,read_count\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 \CocoaLigature1 """\
+#Folder selection command:\
+raft -f OSXMail_Client_Automation.raft user ic1_jun19_dgn3@icloud.com password \\!Cloud1234 folder Inbox\
+\
+#From Search Mail operation:\
+raft -f OSXMail_Client_Automation.raft from_addr searchHeader From searchText "ic1_jun19_dgn3@icloud.com"\
+\
+#To Search Mail operation:\
+raft -f OSXMail_Client_Automation.raft searchHeader #To searchText "ic1_jun19_dgn3@icloud.com"\
+\
+#Subject Search Mail operation: ( Check in FROM/To/Body/Cc/Subject )\
+raft -f OSXMail_Client_Automation.raft searchHeader subject searchText "working code folder selection3"\
+\
+#Body Search Mail operation:\
+raft -f OSXMail_Client_Automation.raft searchHeader body searchText "usr/bin/python"\
+\
+#To Check Mail delivery:\
+raft -f OSXMail_Client_Automation.raft folder test2 searchHeader subject searchText "Aug 1: iCloud1 : Puppet testing"\
+\
+#To Check Save #To Sent folder:\
+raft -f OSXMail_Client_Automation.raft searchText "Aug 1: iCloud1 : Puppet testing"\
+\
+#To Check Mailbody Text:\
+raft -f OSXMail_Client_Automation.raft folder INBOX searchHeader Subject searchText "OSX automation test mail"\
+\
+#To Forward Mail:\
+raft -f OSXMail_Client_Automation.raft searchText "Nov 5 : Test mail using TO/CC/BCC address" to_addr ic1_dgn1_aug1@icloud.com\
+\
+#To Copy Mails for both operations:\
+raft -f OSXMail_Client_Automation.raft -f sourceDefaultFolder "INBOX" sourceCustomFolder "test1" DestinationDefaultFolder "Junk" DestinationCustomFolder "test3" Count "3"\
+\
+#To Copy mails between Default folders : ( INBOX/SENT/TRASH/DRAFTS etc..make sure #To have mails at Source folder )\
+raft -f OSXMail_Client_Automation.raft -f sourceDefaultFolder "INBOX"  DestinationDefaultFolder "Junk" Count "3"\
+\
+#To Copy mails between Custom folders : ( test1 / test2 \'85.etc created by users\'85make sure #To have mails at Source folder ) \
+raft -f OSXMail_Client_Automation.raft -f sourceCustomFolder "test1" DestinationCustomFolder "test3" Count "3"\
+\
+"""\
+}

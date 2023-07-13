@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>ED674A53-5143-4EF9-8E0C-2C7E85A3FC48</string>
+	<key>CFBundleName</key>
+	<string>ReplyMail</string>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+</dict>
+</plist>

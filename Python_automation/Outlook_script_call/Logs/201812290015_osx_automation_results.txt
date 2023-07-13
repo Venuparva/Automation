@@ -1,0 +1,718 @@
+Script started on Sat Dec 29 00:15:18 2018
+command: /Users/namithashetty/Documents/Outlook_automation/Outlook_script_call/python_script_call_outlook_3.sh
+TEST: opening 'Outlook_client_Automation'
+User provided From Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn1_auto_osx@icloud.comUser provided To Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn2_apr1@icloud.comUser provided body text:This is body of mail -DgnUser provided subj text:OSX : 29-Nov-18 : Single To/cc/bcc test mailUser provided attachment file path:Raft_auto_code/sunset.jpgUser provided folder text:test1LoginintoOutlook: Configuring the accounts using credentials using UserName:ic1_may22_dgn1@icloud.com and Password:avaq-kdyv-ssjq-nvek
+LoginintoOutlook: Launch Outlook Mail app got success
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: click_Mainpage_Tool_Tab already opened..return back....
+LoginintoOutlook: click_Mainpage_Tool_Tab app got success
+
+OutlookMainPageElem: click_Accounts_icon_under_Tools_Tab action got success....
+LoginintoOutlook: click_Accounts_icon_under_Tools_Tab app got success
+
+OutlookMainPageElem: click_Add_Account_button_in_config_window action got success....
+LoginintoOutlook: click_Add_Account_button_in_config_window app got success
+
+OutlookMainPageElem: click_UserName_textBox_in_config_window action got success....
+LoginintoOutlook: click_UserName_textBox_in_config_window app got success
+LoginintoOutlook: UserName is not Null and proceed further with adding the accounts
+LoginintoOutlook: UserName contains iCloud.com in it...proceed further
+User entered credentials:ic1_may22_dgn1@icloud.com
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+
+OutlookMainPageElem: click_continue_button_in_config_window action got success....
+LoginintoOutlook: click_continue_button_in_config_window app got success
+LoginintoOutlook: Password is not Null and proceed further with adding the accounts
+User entered credentials:avaq-kdyv-ssjq-nvek
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+LoginintoOutlook: Looks like Account configuration func ended successfully..Proceed further
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: click_AddAccount_button_in_config_window app got success
+
+OutlookMainPageElem: click_Done_button action got success....
+LoginintoOutlook: click_Done_button app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: close_OutlookApp action got success....
+LoginintoOutlook: close_OutlookApp app got success
+OSXMail - Outlook Account Configuration result : pass
+----------------------
+Cleaning folder going on:Drafts
+----------------------
+deleteMessages: Check mail using folderName:Drafts & count: 50
+deleteMessages: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+deleteMessages: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+deleteMessages:click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Inside clear_search_text action got success....
+
+OutlookMainPageElem: clear_search_text action got success....
+deleteMessages: clear_search_text_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Drafts
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Drafts
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Drafts
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:51
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[4].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[5].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[6].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[7].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[8].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[9].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+Release shift key again to avoid multiple folders selection
+deleteMessages: select_messages_status got success...Proceed further..
+
+OutlookMainPageElem: looks like click_delete_button is visible under mail header
+Deletion process happening in some other folders...
+deleteMessages: delete_messages_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Deleted Messages
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+Cleaning process got success for folder:Drafts
+imap_del_Msg_cmd:"3 select Drafts" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='"3 select Drafts" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1'='EXPUNGE completed'
+************
+
+cmd_val-1::"3 select Drafts" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1------------
+NON LIST command call....
+Looks like NON-FLAG (or) SEEN command call made...proceed further
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek "3 select Drafts" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1 ------------
+------------
+Expected o/p::EXPUNGE completed
+------------
+Actual o/p::9 OK EXPUNGE completed (took 74 ms)
+
+------------
+Response is correct
+Response is correct and proceed further
+
+Outlook -Deleted Messages using EXPUNGE cmd : server-side validation result : Success
+----------------------
+Cleaning folder going on:Deleted Messages
+----------------------
+deleteMessages: Check mail using folderName:Deleted Messages & count: 50
+deleteMessages: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+deleteMessages: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+deleteMessages:click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Inside clear_search_text action got success....
+
+OutlookMainPageElem: clear_search_text action got success....
+deleteMessages: clear_search_text_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Deleted Messages
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:51
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[4].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[5].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[6].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[7].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[8].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[9].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[10].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[11].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[12].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[13].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[14].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[15].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[16].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[17].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[18].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[19].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[20].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[21].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[22].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+Release shift key again to avoid multiple folders selection
+deleteMessages: select_messages_status got success...Proceed further..
+
+OutlookMainPageElem: looks like click_delete_button is visible under mail header
+Deletion process happening in some other folders...
+deleteMessages: delete_messages_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Deleted Messages
+Number of folders-1:15
+Looks like folders are already visible...no need to open it
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+Cleaning process got success for folder:Deleted Messages
+imap_del_Msg_cmd: '3 select "Deleted Messages"' "8 STORE 1:* +FLAGS (\Deleted)" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' '3 select "Deleted Messages"' "8 STORE 1:* +FLAGS (\Deleted)" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1'='EXPUNGE completed'
+************
+
+cmd_val-1:: '3 select "Deleted Messages"' "8 STORE 1:* +FLAGS (\Deleted)" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:34
+Looks like some mails already exists in mailbox and its count:34
+FETCH COMMAND last 4 msgs:8 fetch 30:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::EXPUNGE completed
+------------
+Actual o/p::* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Answered \Seen))
+* 32 FETCH (FLAGS (\Seen))
+* 33 FETCH (FLAGS (\Seen))
+* 34 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 24 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG/READ validation for cmd:  "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6  : Fail
+
+Service_side_event_check_result_status failed-1...hence retry one more time:Fail
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' '3 select "Deleted Messages"' "8 STORE 1:* +FLAGS (\Deleted)" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1'='EXPUNGE completed'
+************
+
+cmd_val-1:: '3 select "Deleted Messages"' "8 STORE 1:* +FLAGS (\Deleted)" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:34
+Looks like some mails already exists in mailbox and its count:34
+FETCH COMMAND last 4 msgs:8 fetch 30:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::EXPUNGE completed
+------------
+Actual o/p::* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Answered \Seen))
+* 32 FETCH (FLAGS (\Seen))
+* 33 FETCH (FLAGS (\Seen))
+* 34 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 35 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG/READ validation for cmd:  "2 select INBOX" "8 fetch 30:* (FLAGS)" | grep "FETCH" | tail -6  : Fail
+
+createFolder:service_side_event_check_result_status failed...some issue need to check manuallyFail
+Outlook - Deleted Messages using EXPUNGE cmd : server-side validation status : fail
+----------------------
+Cleaning folder going on:copytest4
+----------------------
+deleteMessages: Check mail using folderName:copytest4 & count: 50
+deleteMessages: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+deleteMessages: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+deleteMessages:click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Inside clear_search_text action got success....
+
+OutlookMainPageElem: clear_search_text action got success....
+deleteMessages: clear_search_text_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:copytest4
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copysource1 • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copytest4 • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:51
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+Release shift key again to avoid multiple folders selection
+deleteMessages: select_messages_status got success...Proceed further..
+
+OutlookMainPageElem: looks like click_delete_button is visible under mail header
+Deletion process happening in some other folders...
+deleteMessages: delete_messages_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Deleted Messages
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+Cleaning process got success for folder:copytest4
+imap_del_Msg_cmd:"3 select copytest4" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='"3 select copytest4" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1'='EXPUNGE completed'
+************
+
+cmd_val-1::"3 select copytest4" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1------------
+NON LIST command call....
+Looks like NON-FLAG (or) SEEN command call made...proceed further
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek "3 select copytest4" "9 EXPUNGE" | grep "OK EXPUNGE completed" | tail -1 ------------
+------------
+Existing count before copy/delete ::EXPUNGE completed
+------------
+Actual o/p::9 OK EXPUNGE completed (took 69 ms)
+
+------------
+Response is correct
+Response is correct and proceed further
+
+Outlook -Deleted Messages using EXPUNGE cmd : server-side validation result : Success
+----------------------
+Cleaning folder going on:Sent
+----------------------
+deleteMessages: Check mail using folderName:Sent & count: 50
+deleteMessages: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+deleteMessages: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+deleteMessages:click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Inside clear_search_text action got success....
+
+OutlookMainPageElem: clear_search_text action got success....
+deleteMessages: clear_search_text_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Sent
+Number of folders-1:5
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:15
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Sent
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Sent
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Sent
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Sent
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:51
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[4].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[5].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[6].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[7].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[8].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[9].click()Recording test result: FAILED
+Found crashlog with existing radars (rdar://problems/42507645&44786465&44811150&44970160): /Users/namithashetty/Library/Logs/DiagnosticReports/xcodebuild_2018-12-29-001523-1_OSXautomachine-3.crash
+Found crashlog with existing radars (rdar://problems/42507645&44786465&44811150&44970160): /Users/namithashetty/Library/Logs/DiagnosticReports/xcodebuild_2018-12-29-001523_OSXautomachine-3.crash
+Recording test result: FAILED
+TEST: closing 'Outlook_client_Automation'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Raft.framework/Versions/A/lib/raft.zip/raft/core/decorate.py", line 177, in autorelease_wrapper
+  File "/Users/namithashetty/Documents/Outlook_Automation/Raft_auto_code/Outlook_client_Automation.raft/Contents/MacOS/__init__.py", line 166, in runTest
+    Clean_up_account_result = clean_up_account_before_test(userName, password)
+  File "/Library/Frameworks/Raft.framework/Versions/A/lib/raft.zip/raft/core/decorate.py", line 177, in autorelease_wrapper
+  File "/Users/namithashetty/Documents/Outlook_Automation/Raft_auto_code/Outlook_client_Automation.raft/Contents/MacOS/__init__.py", line 81, in clean_up_account_before_test
+    Delete_msgs_before_copy_result = Outlookclient.Actions.DeleteMails.deleteMessages(folder, "50")
+  File "/Users/namithashetty/Library/Raft/raftlibs/Outlookclient/Actions/DeleteMails.py", line 57, in deleteMessages
+    select_messages_status = Outlookclient.PageElements.OutlookMainPageElements.select_Messages(count)
+  File "/Users/namithashetty/Library/Raft/raftlibs/Outlookclient/PageElements/OutlookMainPageElements.py", line 185, in select_Messages
+    matched_mail_subject_text = eval(matched_mail_subject_elem)
+error: UIAExceptionNoMousePoint - No mouse point available for object: UIAOutlineRow_0x7fe80c1a9a00 from target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[9]
+***********************************
+script result-1
+----------------
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+click_Home_button_status from ComposeMailWindow Action folder: Success
+New clear_search_text_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 10
+select_messages_status from MailMainPageElements PageElements folder: Success
+delete_messages_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+click_Home_button_status from ComposeMailWindow Action folder: Success
+New clear_search_text_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 23
+select_messages_status from MailMainPageElements PageElements folder: Success
+delete_messages_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+click_Home_button_status from ComposeMailWindow Action folder: Success
+New clear_search_text_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 2
+select_messages_status from MailMainPageElements PageElements folder: Success
+delete_messages_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+click_Home_button_status from ComposeMailWindow Action folder: Success
+New clear_search_text_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 10
+
+----------------
+
+Script done on Sat Dec 29 00:22:08 2018

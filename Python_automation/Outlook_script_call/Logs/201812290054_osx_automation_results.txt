@@ -1,0 +1,183 @@
+Script started on Sat Dec 29 00:54:14 2018
+command: /Users/namithashetty/Documents/Outlook_automation/Outlook_script_call/python_script_call_outlook_3.sh
+TEST: opening 'Outlook_client_Automation'
+User provided From Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn1_auto_osx@icloud.comUser provided To Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn2_apr1@icloud.comUser provided body text:This is body of mail -DgnUser provided subj text:OSX : 29-Nov-18 : Single To/cc/bcc test mailUser provided attachment file path:Raft_auto_code/sunset.jpgUser provided folder text:test1LoginintoOutlook: Configuring the accounts using credentials using UserName:ic1_may22_dgn1@icloud.com and Password:avaq-kdyv-ssjq-nvek
+LoginintoOutlook: Launch Outlook Mail app got success
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: click_Mainpage_Tool_Tab action got success....
+LoginintoOutlook: click_Mainpage_Tool_Tab app got success
+
+OutlookMainPageElem: click_Accounts_icon_under_Tools_Tab action got success....
+LoginintoOutlook: click_Accounts_icon_under_Tools_Tab app got success
+
+OutlookMainPageElem: click_Add_Account_button_in_config_window action got success....
+LoginintoOutlook: click_Add_Account_button_in_config_window app got success
+
+OutlookMainPageElem: click_UserName_textBox_in_config_window action got success....
+LoginintoOutlook: click_UserName_textBox_in_config_window app got success
+LoginintoOutlook: UserName is not Null and proceed further with adding the accounts
+LoginintoOutlook: UserName contains iCloud.com in it...proceed further
+User entered credentials:ic1_may22_dgn1@icloud.com
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+
+OutlookMainPageElem: click_continue_button_in_config_window action got success....
+LoginintoOutlook: click_continue_button_in_config_window app got success
+LoginintoOutlook: Password is not Null and proceed further with adding the accounts
+User entered credentials:avaq-kdyv-ssjq-nvek
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+LoginintoOutlook: Looks like Account configuration func ended successfully..Proceed further
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: click_AddAccount_button_in_config_window app got success
+
+OutlookMainPageElem: click_Done_button action got success....
+LoginintoOutlook: click_Done_button app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: close_OutlookApp action got success....
+LoginintoOutlook: close_OutlookApp app got success
+OSXMail - Outlook Account Configuration result : pass
+
+Outlook - Clean_up_account_result : fail
+-----------------------
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_dgn1_auto_osx@icloud.com & subj:Dec29153740:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button already showing New mail iCon
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SendMailtoSingleUserfromOutlook:Folder selection got Success
+OutlookMainPageElem: click_NewMail_button action got success....
+SendMailtoSingleUserfromOutlook: click_NewMail_button open got success...Proceed further with entering receipient address details procedure below..
+SendMailtoSingleUserfromOutlook: to_addr is not Null and proceed further
+SendMailtoSingleUserfromOutlook: from_addr contains iCloud.com in it...proceed further
+SendMailtoSingleUserfromOutlook: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: subj is not Null and proceed further
+SendMailtoSingleUserfromOutlook: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+SendMailtoSingleUserfromOutlook: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+SendMailtoSingleUserfromOutlook: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Click_send_button_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: ---------------SendMiltoSingleRecipient func() got success and Return to Main-------------------
+
+OutlookMainPageElem: click_Done_button action got success....
+SendMailtoSingleUserfromOutlook: click_Refresh_button open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Send_mail  : pass
+-----------------------
+SavetoSentCheck: Check mail using subj:Dec29153740:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+SavetoSentCheck: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+SavetoSentCheck: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:Sent Messages
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+SavetoSentCheck: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29153740:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+SavetoSentCheck: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7fc1f9760890 isValid=1 axElement=0x7fc1f9760c70 parentElement=UIAColumn_0x7fc1f975fca0>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+SavetoSentCheck: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Save to Sent Folder: pass
+-----------------------
+CheckdeliveryinFolder: Check mail using subj:Dec29153740:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+CheckdeliveryinFolder: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+CheckdeliveryinFolder: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29153740:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+CheckdeliveryinFolder: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7fc1fc091070 isValid=1 axElement=0x7fc1fbf8beb0 parentElement=UIAColumn_0x7fc1fbf6cbf0>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+CheckdeliveryinFolder: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Check Mail delivery : pass
+-----------------------
+Main:Draft subject:Dec29153853:Save to drafts:
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_dgn1_auto_osx@icloud.com & subj:Dec29153853:Save to drafts: & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button not showing New mail iCon....need to click Home button to enable it
+
+OutlookMainPageElem: click_Home_button action got failed....tried one more time and got worked
+SendMailtoSingleUserfromOutlook: New Mail Compose window open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_NewMail_button action got success....
+SendMailtoSingleUserfromOutlook: click_NewMail_button open got success...Proceed further with entering receipient address details procedure below..
+SendMailtoSingleUserfromOutlook: to_addr is not Null and proceed further
+SendMailtoSingleUserfromOutlook: from_addr contains iCloud.com in it...proceed further
+SendMailtoSingleUserfromOutlook: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: subj is not Null and proceed further
+SendMailtoSingleUserfromOutlook: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+SendMailtoSingleUserfromOutlook: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+SendMailtoSingleUserfromOutlook: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+
+ComposeMailWindow: click_save_To_Drafts_button action got success....
+SendMailtoSingleUserfromOutlook: Save_to_drafts_button open got success...Proceed further with entering further details procedure below..

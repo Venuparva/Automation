@@ -1,0 +1,1504 @@
+Script started on Sat Dec 29 01:02:56 2018
+command: /Users/namithashetty/Documents/Outlook_automation/Outlook_script_call/python_script_call_outlook_3.sh
+TEST: opening 'Outlook_client_Automation'
+User provided From Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn2_apr1@icloud.comUser provided body text:This is body of mail -DgnUser provided subj text:OSX : 29-Nov-18 : Single To/cc/bcc test mailUser provided attachment file path:Raft_auto_code/sunset.jpgUser provided folder text:test1LoginintoOutlook: Configuring the accounts using credentials using UserName:ic1_may22_dgn1@icloud.com and Password:avaq-kdyv-ssjq-nvek
+LoginintoOutlook: Launch Outlook Mail app got success
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: click_Mainpage_Tool_Tab action got success....
+LoginintoOutlook: click_Mainpage_Tool_Tab app got success
+
+OutlookMainPageElem: click_Accounts_icon_under_Tools_Tab action got success....
+LoginintoOutlook: click_Accounts_icon_under_Tools_Tab app got success
+
+OutlookMainPageElem: click_Add_Account_button_in_config_window action got success....
+LoginintoOutlook: click_Add_Account_button_in_config_window app got success
+
+OutlookMainPageElem: click_UserName_textBox_in_config_window action got success....
+LoginintoOutlook: click_UserName_textBox_in_config_window app got success
+LoginintoOutlook: UserName is not Null and proceed further with adding the accounts
+LoginintoOutlook: UserName contains iCloud.com in it...proceed further
+User entered credentials:ic1_may22_dgn1@icloud.com
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+
+OutlookMainPageElem: click_continue_button_in_config_window action got success....
+LoginintoOutlook: click_continue_button_in_config_window app got success
+LoginintoOutlook: Password is not Null and proceed further with adding the accounts
+User entered credentials:avaq-kdyv-ssjq-nvek
+
+OutlookMainPageElem: set_UserName_and_password action got success....
+LoginintoOutlook: Looks like Account configuration func ended successfully..Proceed further
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: click_AddAccount_button_in_config_window app got success
+
+OutlookMainPageElem: click_Done_button action got success....
+LoginintoOutlook: click_Done_button app got success
+Checkbox enabled value:0
+Looks like On my Computer folders visible...neeed to close it
+
+OutlookMainPageElem: click_AddAccount_button_in_config_window action got success....
+LoginintoOutlook: Hide_on_my_computer_folder from outlook mail app got success
+
+OutlookMainPageElem: close_OutlookApp action got success....
+LoginintoOutlook: close_OutlookApp app got success
+OSXMail - Outlook Account Configuration result : pass
+
+Outlook - Clean_up_account_result : fail
+-----------------------
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_may22_dgn1@icloud.com & subj:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button already showing New mail iCon
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SendMailtoSingleUserfromOutlook:Folder selection got Success
+OutlookMainPageElem: click_NewMail_button action got success....
+SendMailtoSingleUserfromOutlook: click_NewMail_button open got success...Proceed further with entering receipient address details procedure below..
+SendMailtoSingleUserfromOutlook: to_addr is not Null and proceed further
+SendMailtoSingleUserfromOutlook: from_addr contains iCloud.com in it...proceed further
+SendMailtoSingleUserfromOutlook: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: subj is not Null and proceed further
+SendMailtoSingleUserfromOutlook: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+SendMailtoSingleUserfromOutlook: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+SendMailtoSingleUserfromOutlook: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Click_send_button_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: ---------------SendMiltoSingleRecipient func() got success and Return to Main-------------------
+
+OutlookMainPageElem: click_Done_button action got success....
+SendMailtoSingleUserfromOutlook: click_Refresh_button open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Send_mail  : pass
+-----------------------
+SavetoSentCheck: Check mail using subj:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+SavetoSentCheck: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+SavetoSentCheck: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:Sent Messages
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+SavetoSentCheck: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+SavetoSentCheck: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab20847b0 isValid=1 axElement=0x7feab20844a0 parentElement=UIAColumn_0x7feab2083cb0>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+SavetoSentCheck: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Save to Sent Folder: pass
+-----------------------
+CheckdeliveryinFolder: Check mail using subj:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+CheckdeliveryinFolder: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+CheckdeliveryinFolder: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+CheckdeliveryinFolder: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab24d5e70 isValid=1 axElement=0x7feab24d9d60 parentElement=UIAColumn_0x7feab24d6980>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+CheckdeliveryinFolder: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Check Mail delivery : pass
+-----------------------
+Main:Draft subject:Dec29154376:Save to drafts:
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_may22_dgn1@icloud.com & subj:Dec29154376:Save to drafts: & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button not showing New mail iCon....need to click Home button to enable it
+
+OutlookMainPageElem: click_Home_button action got failed....tried one more time and got worked
+SendMailtoSingleUserfromOutlook: New Mail Compose window open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_NewMail_button action got success....
+SendMailtoSingleUserfromOutlook: click_NewMail_button open got success...Proceed further with entering receipient address details procedure below..
+SendMailtoSingleUserfromOutlook: to_addr is not Null and proceed further
+SendMailtoSingleUserfromOutlook: from_addr contains iCloud.com in it...proceed further
+SendMailtoSingleUserfromOutlook: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: subj is not Null and proceed further
+SendMailtoSingleUserfromOutlook: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+SendMailtoSingleUserfromOutlook: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+SendMailtoSingleUserfromOutlook: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+
+ComposeMailWindow: click_save_To_Drafts_button action got success....
+SendMailtoSingleUserfromOutlook: Save_to_drafts_button open got success...Proceed further with entering further details procedure below..
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' '3 select Drafts' '8 search text "Dec29154376"' | tail -10 | grep -A2 "* SEARCH" '='Dec29154376'
+************
+
+cmd_val-1:: '3 select Drafts' '8 search text "Dec29154376"' | tail -10 | grep -A2 "* SEARCH" ------------
+NON LIST command call....
+Looks like NON-FLAG (or) SEEN command call made...proceed further
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  '3 select Drafts' '8 search text "Dec29154376"' | tail -10 | grep -A2 "* SEARCH"  ------------
+------------
+Expected o/p::Dec29154376
+------------
+Actual o/p::* SEARCH 2
+8 OK SEARCH completed (took 70 ms)
+
+------------
+Response is correct
+Looks like search command provided and matched mail exists...
+
+wbt-report : Outlook - Save_To_Draft  : pass
+-----------------------
+ForwardMail: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_may22_dgn1@icloud.com & subj:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+ForwardMail: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:Searching "INBOX" and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SendMailtoSingleUserfromOutlook:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+ForwardMail: New Mail Compose window open got success.....
+Subject search text:subject:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+ForwardMail: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab2a0b980 isValid=1 axElement=0x7feab2882610 parentElement=UIAColumn_0x7feab2859f00>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+ForwardMail: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+ForwardMail: click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+Click_forward_button element:<UIAButton_0x7feab20a2a70 isValid=1 axElement=0x7feab28656b0 parentElement=UIAScrollView_0x7feab20a1500>
+
+OutlookMainPageElem: Click_forward_button action got success....
+ForwardMail: click_fwd_button_status open got success...Proceed further with entering receipient address details procedure below..
+ForwardMail: to_addr is not Null and proceed further
+ForwardMail: from_addr contains iCloud.com in it...proceed further
+ForwardMail: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+ForwardMail: subj is not Null and proceed further
+ForwardMail: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+ForwardMail: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+ForwardMail: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+ForwardMail: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+ForwardMail: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+ForwardMail: Click_send_button_status open got success...Proceed further with entering further details procedure below..
+
+OutlookMainPageElem: click_Done_button action got success....
+ForwardMail: click_Refresh_button open got success...Proceed further with entering receipient address details procedure below..
+CheckdeliveryinFolder: Check mail using subj:Dec29154459:Forwarded msg with this Subject from automation
+CheckdeliveryinFolder: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:Searching "INBOX" and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+CheckdeliveryinFolder: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29154459:Forwarded msg with this Subject from automation
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+CheckdeliveryinFolder: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab20a4140 isValid=1 axElement=0x7feab20a43f0 parentElement=UIAColumn_0x7feab20aa780>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+CheckdeliveryinFolder: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+ForwardMail: delivery_confirmation_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Forward_mail : pass
+-----------------------
+ReplyMail: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_may22_dgn1@icloud.com & subj:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+ReplyMail: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:Searching "INBOX" and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SendMailtoSingleUserfromOutlook:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+ReplyMail: New Mail Compose window open got success.....
+Subject search text:subject:Dec29154264:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+ReplyMail: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab289d140 isValid=1 axElement=0x7feab2a382b0 parentElement=UIAColumn_0x7feab2a20300>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+ReplyMail: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+ReplyMail: click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+Click_forward_button element:<UIAButton_0x7feab2a38d20 isValid=1 axElement=0x7feab20b5620 parentElement=UIAScrollView_0x7feab2a38180>
+
+OutlookMainPageElem: Click_reply_button action got success....
+ReplyMail: click_reply_button_status open got success...Proceed further with entering receipient address details procedure below..
+ReplyMail: subj is not Null and proceed further
+ReplyMail: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+ReplyMail: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Entering body_text field
+ReplyMail: Body_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+ReplyMail: Attachment to be included in mail and proceed further
+Adding Attachment file Name:Raft_auto_code/sunset.jpg
+FILE Namesunset.jpgFOLDER NameRaft_auto_codeAdd Attachment done success in compose window
+ReplyMail: Attachment_add_status open got success...Proceed further with entering further details procedure below..
+ReplyMail: Click_send_button_status open got success...Proceed further with entering further details procedure below..
+
+OutlookMainPageElem: click_Done_button action got success....
+ReplyMail: click_Refresh_button open got success...Proceed further with entering receipient address details procedure below..
+CheckdeliveryinFolder: Check mail using subj:Dec29154557:Reply msg with this Subject from automation
+CheckdeliveryinFolder: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:Searching "INBOX" and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+SavetoSentCheck:Folder selection got Success
+OutlookMainPageElem: click_Search_TAB_button action got success....
+CheckdeliveryinFolder: click_Search_TAB_buttonn got success.....
+Subject search text:subject:Dec29154557:Reply msg with this Subject from automation
+
+OutlookMainPageElem: click_Subject_search_button action got success....
+CheckdeliveryinFolder: Enter_Subject_search_text_status open got success...
+Open_matched_Subject_mail element:<UIAStaticText_0x7feab28e3df0 isValid=1 axElement=0x7feab2a612c0 parentElement=UIAColumn_0x7feab2a5ddc0>
+
+OutlookMainPageElem: Open_matched_Subject_mail action got success....
+CheckdeliveryinFolder: Open_matched_Subject_mail_status open got success...Proceed further with entering receipient address details procedure below..
+ForwardMail: delivery_confirmation_status open got success...Proceed further with entering receipient address details procedure below..
+
+wbt-report : Outlook - Reply_mail : pass
+-----------------------
+Inside exist mailbox msgs count func():folder:"Deleted Messages":imapcmd:Copy
+im inside none of these
+Existing total_msg_count CMD for COPY/DELETE::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT "Deleted Messages"' | grep "EXISTS" | awk '{ print $2 }' 
+Existing Total_msg_count:1
+existing_count-3:1
+deleteMessages: Check mail using folderName:INBOX & count: 4
+deleteMessages: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+deleteMessages: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button is already open
+
+OutlookMainPageElem: click_Home_button action got success....
+deleteMessages:click_Home_button_status got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Inside clear_search_text action got success....
+
+OutlookMainPageElem: clear_search_text action got success....
+deleteMessages: clear_search_text_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:5
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[4].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+Release shift key again to avoid multiple folders selection
+deleteMessages: select_messages_status got success...Proceed further..
+
+OutlookMainPageElem: looks like click_delete_button is visible under mail header
+Deletion process happening in some other folders...
+deleteMessages: delete_messages_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:Deleted Messages
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:Deleted Messages
+Found the correct folder Name ....click it immediately
+deleteMessages: select_folder_status got success...Proceed further..
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' '3 select "Deleted Messages"' | grep "EXISTS" | tail -1 | awk '{ print $2}' '='1'
+************
+
+cmd_val-1:: '3 select "Deleted Messages"' | grep "EXISTS" | tail -1 | awk '{ print $2}' ------------
+NON LIST command call....
+Looks like NON-FLAG (or) SEEN command call made...proceed further
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  '3 select "Deleted Messages"' | grep "EXISTS" | tail -1 | awk '{ print $2}'  ------------
+------------
+Existing count before copy/delete ::1
+------------
+Actual o/p::5
+
+------------
+
+Response is correct-2 with cmd_result:5
+ and out_val:1 with trash flag: False
+EVENTS DELETE validation for cmd:  '3 select "Deleted Messages"' | grep "EXISTS" | tail -1 | awk '{ print $2}'  : Pass
+
+Outlook -COPY Messages between user folders: server-side validation result : Success
+
+wbt-report : Outlook -Delete Messages : pass
+-----------------------
+CreateFolder: Check mail using folderName:test1
+CreateFolder: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem:Inside create_folder elements function.....
+Number of folders-2:11
+Looks like folders are already visible...no need to open it
+Given folder: ic1_may22_dgn1@icloud.com and Current folder name text:INBOX • ic1_may22_dgn1@icloud.com
+Created new folder Name successfully.
+createFolder: Folder_creation_status status got success...Proceed further..
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='3 LIST "" *CREATE'='test1'
+************
+
+cmd_val-1::3 LIST "" *CREATE------------
+LIST command call....
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '3 LIST "" *' ------------
+------------
+Expected o/p::test1
+------------
+Actual o/p::spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060120 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:27669) vp21q10im-hpaj060120 [54:60:09:12:09:D9]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 56 ms)
+
+------------
+Response is correct
+
+Looks like Folder command provided out_val is:test1 and cmd_result:spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060120 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:27669) vp21q10im-hpaj060120 [54:60:09:12:09:D9]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 56 ms)
+
+
+----------------------------
+EVENTS CREATE/RENAME FOLDER validation-1 for cmd: 3 LIST "" *CREATE : pass
+
+Outlook -Create_folder server-side validation result : Success
+
+Create_folder server-side validation status : pass
+
+wbt-report : Outlook - Create_folder_result : pass
+Recording test result: PASSED
+-----------------------
+RenameFolder: Check mail using oldName:test1 and newName:test1_rename
+RenameFolder: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:test1
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:12
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copysource1 • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copytest4 • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Notes • ic1_may22_dgn1@icloud.com and given folder name:test1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:test1 • ic1_may22_dgn1@icloud.com and given folder name:test1
+Found the correct folder Name ....click it immediately
+RenameFolder: New_Mailbox_option_click_status status got success...Proceed further..
+Old folder name : test1 and New folder name: test1_rename and selected folder name text:test1 • ic1_may22_dgn1@icloud.com
+Rename folder Name successfully.
+RenameFolder: Folder_creation_status status got success...Proceed further..
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='3 LIST "" *RENAME'='test1_rename'
+************
+
+cmd_val-1::3 LIST "" *RENAME------------
+LIST command call....
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '3 LIST "" *' ------------
+------------
+Expected o/p::test1_rename
+------------
+Actual o/p::spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:29165) vp21q10im-hpaj060121 [64:30:09:13:07:03]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 66 ms)
+
+------------
+Response is correct
+
+Looks like Folder command provided out_val is:test1_rename and cmd_result:spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:29165) vp21q10im-hpaj060121 [64:30:09:13:07:03]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 66 ms)
+
+
+----------------------------
+EVENTS CREATE/RENAME FOLDER validation-1 for cmd: 3 LIST "" *RENAME : Fail
+
+Service_side_event_check_result_status failed-1...hence retry one more time:Fail
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='3 LIST "" *RENAME'='test1_rename'
+************
+
+cmd_val-1::3 LIST "" *RENAME------------
+LIST command call....
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '3 LIST "" *' ------------
+------------
+Expected o/p::test1_rename
+------------
+Actual o/p::spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060120 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:8974) vp21q10im-hpaj060120 [02:52:09:13:18:33]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1_rename"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 57 ms)
+
+------------
+Response is correct
+
+Looks like Folder command provided out_val is:test1_rename and cmd_result:spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060120 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:8974) vp21q10im-hpaj060120 [02:52:09:13:18:33]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "test1_rename"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 57 ms)
+
+
+----------------------------
+EVENTS CREATE/RENAME FOLDER validation-1 for cmd: 3 LIST "" *RENAME : pass
+
+Outlook -Create_folder server-side validation result : Success
+
+Create_folder server-side validation status : pass
+
+wbt-report : Outlook - Rename_folder_result : pass
+-----------------------
+DeleteFolder: Check mail using folderName:test1_rename
+DeleteFolder: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:test1_rename
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:12
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copysource1 • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copytest4 • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Notes • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:test1_rename • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Found the correct folder Name ....click it immediately
+DeleteFolder: New_Mailbox_option_click_status status got success...Proceed further..
+Given folder: test1_rename and Current folder name text:test1_rename • ic1_may22_dgn1@icloud.com
+Delete button exists.....
+Delete folder completed successfully.
+DeleteFolder: Folder_delete_status status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:test1_rename
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:test1_rename
+Found the either TRASH (or) correct folder Name ....proceed further
+current_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[0].visibleRows()[6].doubleClick()Correct Folder Name-2:test1_rename • ic1_may22_dgn1@icloud.comFound the correct folder Name ....click it immediately
+DeleteFolder: Select folder again for deletion under TRASH status got success...Proceed further..
+Delete permenant button exists.....
+DeleteFolder: Folder_delete_status status under TRASH got success...Proceed further..
+Outlook Folder Delete result : pass
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='3 LIST "" *DELETE'='test1_rename'
+************
+
+cmd_val-1::3 LIST "" *DELETE------------
+LIST command call....
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '3 LIST "" *' ------------
+------------
+Expected o/p::test1_rename
+------------
+Actual o/p::spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:6115) vp21q10im-hpaj060121 [13:42:09:14:27:65]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "Deleted Messages/test1_rename"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 63 ms)
+
+------------
+Response is correct
+
+Looks like Folder command provided out_val is:test1_rename and cmd_result:spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:6115) vp21q10im-hpaj060121 [13:42:09:14:27:65]
+1 OK User ic1_may22_dgn1 logged in
+* LIST () "/" "Deleted Messages/test1_rename"
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 63 ms)
+
+
+----------------------------
+EVENTS DELETE FOLDER validation-2 for cmd: 3 LIST "" *DELETE : Fail
+
+Service_side_event_check_result_status failed-1...hence retry one more time:Fail
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'='3 LIST "" *DELETE'='test1_rename'
+************
+
+cmd_val-1::3 LIST "" *DELETE------------
+LIST command call....
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '3 LIST "" *' ------------
+------------
+Expected o/p::test1_rename
+------------
+Actual o/p::spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:11512) vp21q10im-hpaj060121 [11:41:09:14:37:F6]
+1 OK User ic1_may22_dgn1 logged in
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 63 ms)
+
+------------
+Response is correct
+
+Looks like Folder command provided out_val is:test1_rename and cmd_result:spawn openssl s_client -quiet -connect imap.mail.me.com:993
+depth=2 C = US, O = GeoTrust Inc., CN = GeoTrust Global CA
+verify return:1
+1 login ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek
+depth=1 CN = Apple IST CA 2 - G1, OU = Certification Authority, O = Apple Inc., C = US
+verify return:1
+depth=0 CN = *.mail.me.com, OU = management:idms.group.859635, O = Apple Inc., ST = California, C = US
+verify return:1
+3 LIST "" *
+
+* OK [CAPABILITY vp21q10im-hpaj060121 1822B48 XAPPLEPUSHSERVICE IMAP4 IMAP4rev1 SASL-IR AUTH=ATOKEN AUTH=PLAIN] iSCREAM ready to rumble (1822B48-10000-Famine1822-0-29b4fe6331fb:11512) vp21q10im-hpaj060121 [11:41:09:14:37:F6]
+1 OK User ic1_may22_dgn1 logged in
+* LIST (\Noinferiors) "/" "INBOX"
+* LIST () "/" "Archive"
+* LIST () "/" "Deleted Messages"
+* LIST () "/" "Drafts"
+* LIST () "/" "Junk"
+* LIST () "/" "Sent Messages"
+* LIST () "/" "test"
+* LIST () "/" "test/sub"
+* LIST () "/" "Notes"
+* LIST () "/" "copysource1"
+* LIST () "/" "copytest4"
+3 OK LIST completed (took 63 ms)
+
+
+----------------------------
+EVENTS DELETE FOLDER validation-1 for cmd: 3 LIST "" *DELETE : pass
+
+Outlook -DeleteFolder server-side validation result : Success
+
+ DeleteFolder server-side validation status : pass
+
+wbt-report : Outlook - Delete_folder_result : pass
+-----------------------
+Inside flagMails function ...
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+FlagMail:Folder selection got Success
+OutlookMainPageElem: click_refresh action got success....
+
+OutlookMainPageElem: click_refresh action got success....
+
+FlagMail:click_GetNewMail_res_status:SuccessUser count to select number of msgs:4
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+
+FlagMail:select_Messages got Success
+OutlookMainPageElem: click_flag action got success....
+
+Flag_Mail_res_statusSuccess************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='Flagged'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::Flagged
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 46 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG/READ validation for cmd:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : Fail
+
+Service_side_event_check_result_status failed-1...hence retry one more time:Fail
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='Flagged'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::Flagged
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Flagged \Seen))
+* 31 FETCH (FLAGS (\Flagged \Seen))
+8 OK FETCH completed (took 32 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG/READ validation for cmd and flags added properly:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : Pass
+
+Outlook - FLAG mails: server-side validation result : Success
+
+wbt-report : Outlook -Flag_msgs_result : pass
+-----------------------
+Inside unflagMails function ...
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+UnFlagMail:Folder selection got Success
+OutlookMainPageElem: click_refresh action got success....
+
+OutlookMainPageElem: click_refresh action got success....
+
+UnFlagMail:click_GetNewMail_res_status:SuccessUser count to select number of msgs:4
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+
+UnFlagMail:select_Messages got Success
+OutlookMainPageElem: click_flag action got success....
+
+UnFlagMail statusSuccess************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='UnFlagged'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::UnFlagged
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Flagged \Seen))
+* 31 FETCH (FLAGS (\Flagged \Seen))
+8 OK FETCH completed (took 26 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG validation for cmd and flags not removed properly:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : fail
+
+Service_side_event_check_result_status failed-1...hence retry one more time:Fail
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='UnFlagged'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::UnFlagged
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 31 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG validation for cmd and flags got removed properly:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : Pass
+
+Outlook - UNFLAG mails: server-side validation result : Success
+
+wbt-report : Outlook -UNFlag_msgs_result : pass
+-----------------------
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+MarkAsRead:Folder selection got Success
+OutlookMainPageElem: click_refresh action got success....
+
+OutlookMainPageElem: click_refresh action got success....
+
+MarkAsRead:click_GetNewMail_res_status:SuccessUser count to select number of msgs:4
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+
+MarkAsRead:select_Messages got Success
+OutlookMainPageElem: choose_MarkasUNRead action got success....
+
+MarkAsUnRead_res_statusSuccess
+OutlookMainPageElem: choose_MarkasUNRead action got success....
+
+MarkAsRead_res_statusSuccess************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='Seen'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::Seen
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 31 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS FLAG/READ validation for cmd and flags added properly:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : Pass
+
+Outlook - READ mails: server-side validation result : Success
+
+wbt-report : Outlook -Read_msgs_result : pass
+-----------------------
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:INBOX
+Found the correct folder Name ....click it immediately
+
+MarkAsUnRead:Folder selection got Success
+OutlookMainPageElem: click_refresh action got success....
+
+OutlookMainPageElem: click_refresh action got success....
+
+MarkAsUnRead:click_GetNewMail_res_status:SuccessUser count to select number of msgs:4
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+
+MarkAsUnRead:select_Messages got Success
+OutlookMainPageElem: choose_MarkasUNRead action got success....
+
+MarkAsUnRead_res_statusSuccess************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6'='Unread'
+************
+
+cmd_val-1:: "2 select INBOX" "8 fetch 1:4 (FLAGS)" | grep "FETCH" | tail -6------------
+NON LIST command call....
+total_msg_count CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT INBOX' | grep "EXISTS" | awk '{ print $2 }' Total_msg_count:31
+Looks like some mails already exists in mailbox and its count:31
+FETCH COMMAND last 4 msgs:8 fetch 27:* (FLAGS)
+FINAL IMAP COMMAND for last 4 msgs: "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6 
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  ------------
+------------
+Expected o/p::Unread
+------------
+Actual o/p::* 27 FETCH (FLAGS (\Answered \Seen))
+* 28 FETCH (FLAGS (\Seen))
+* 29 FETCH (FLAGS (\Seen))
+* 30 FETCH (FLAGS (\Seen))
+* 31 FETCH (FLAGS (\Seen))
+8 OK FETCH completed (took 29 ms)
+
+------------
+Response is correct
+Looks like FLAG chnages command provided
+EVENTS READ validation for cmd and flags got removed properly:  "2 select INBOX" "8 fetch 27:* (FLAGS)" | grep "FETCH" | tail -6  : Pass
+
+Outlook - UNREAD mails: server-side validation result : Success
+
+wbt-report : Outlook -UnRead_msgs_result : pass
+-----------------------
+Inside exist mailbox msgs count func():folder:copytest4:imapcmd:Copy
+im inside none of these
+Existing total_msg_count CMD for COPY/DELETE::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek '2 SELECT copytest4' | grep "EXISTS" | awk '{ print $2 }' 
+Existing Total_msg_count:0
+existing_count-3:0
+copyMessages: Check mail using sourceFolder:copysource1, destinationFolder:copytest4 & count:4
+Forwardmail: launch_MailApp_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:copysource1
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copysource1 • ic1_may22_dgn1@icloud.com and given folder name:copysource1
+Found the correct folder Name ....click it immediately
+copyMessages: select_folder_status got success...Proceed further..
+User count to select number of msgs:4
+
+Looks like some messages matches for given text...Proceeding further
+Looks like multiple messages needs to be selected with K-value:(1)
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[1].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[2].click()
+
+matched_mail_subject_text
+None
+Still need to select more Number of messages
+
+
+matched_mail_subject_elem:target.processes()["Microsoft Outlook"].mainWindow().outlines()[1].visibleRows()[3].click()
+
+matched_mail_subject_text
+None
+Number of messages to be selected limit got reached
+copyMessages: select_messages_status got success...Proceed further..
+
+copy_Messages:Click the Messages TAB folder from Outlook app Main Menu
+
+copy_Messages:After entered folder name confirmation
+
+copy_Messages:After clicked COPY button confirmation
+copyMessages: select_folder_status got success...Proceed further..
+
+OutlookMainPageElem:Inside select_folder_element element:copytest4
+Number of folders-1:2
+Looks like folders are hidden...need to open it and make it visible
+Number of folders-2:11
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Archive • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Messages • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Messages • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copysource1 • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:copytest4 • ic1_may22_dgn1@icloud.com and given folder name:copytest4
+Found the correct folder Name ....click it immediately
+copyMessages: select_folder_status got success...Proceed further..
+************
+INSIDE EXEC_CMD running command ::'ic1_may22_dgn1@icloud.com'='avaq-kdyv-ssjq-nvek'=' "3 select copytest4" | grep "EXISTS" | tail -1 | awk '{ print $2}' '='0'
+************
+
+cmd_val-1:: "3 select copytest4" | grep "EXISTS" | tail -1 | awk '{ print $2}' ------------
+NON LIST command call....
+Looks like NON-FLAG (or) SEEN command call made...proceed further
+------------
+Events CMD::cd ~/Documents/Outlook_Automation/Outlook_script_call/ ; ./openssl_exp_cmd.sh ic1_may22_dgn1@icloud.com avaq-kdyv-ssjq-nvek  "3 select copytest4" | grep "EXISTS" | tail -1 | awk '{ print $2}'  ------------
+------------
+Existing count before copy/delete ::0
+------------
+Actual o/p::3
+
+------------
+
+Response is correct-4 with cmd_result:3
+ and out_val:0
+EVENTS COPY validation for cmd:  "3 select copytest4" | grep "EXISTS" | tail -1 | awk '{ print $2}'  : Pass
+
+Outlook -COPY Messages between user folders: server-side validation result : Success
+
+wbt-report : Outlook -Copy_msgs_result between folders : pass
+-----------------------
+LogoutfromOutlook: Removing the accounts using credentials
+LogoutfromOutlook: Launch Outlook Mail app got success
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LogoutfromOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem: click_Mainpage_Tool_Tab already opened..return back....
+LogoutfromOutlook: click_Mainpage_Tool_Tab app got success
+
+OutlookMainPageElem: click_Accounts_icon_under_Tools_Tab action got success....
+LogoutfromOutlook: click_Accounts_icon_under_Tools_Tab app got success
+
+OutlookMainPageElem: select_account_configured_icon action got success....
+LogoutfromOutlook: click_Add_Account_button_in_config_window app got success
+
+OutlookMainPageElem: click_delete_account_icon action got success....
+LogoutfromOutlook: click_delete_account_icon app got success
+
+OutlookMainPageElem: click_Delete_button action got success....
+LogoutfromOutlook: click_Delete_button app got success
+
+OutlookMainPageElem: close_OutlookApp action got success....
+LogoutfromOutlook: close_OutlookApp app got success
+OSXMail - Outlook Account Remove result : pass
+TEST: closing 'Outlook_client_Automation'
+***********************************
+script result-1
+----------------
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+click_Refresh_button status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+click_Search_TAB_button status from click_Search_TAB_button Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+click_Search_TAB_button status from click_Search_TAB_button Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+New Compose window open status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+New Compose window open status from ComposeMailWindow Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+click_Home_button_status: Success
+click_fwd_button_status status from ComposeMailWindow Action folder: Success
+click_Refresh_button status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+click_Search_TAB_button status from click_Search_TAB_button Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+delivery_confirmation_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+New Compose window open status from ComposeMailWindow Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+click_Home_button_status: Success
+click_reply_button_status status from ComposeMailWindow Action folder: Success
+click_Refresh_button status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+click_Search_TAB_button status from click_Search_TAB_button Action folder: Success
+Enter_Subject_search_text_status status from ComposeMailWindow Action folder: Success
+Open_matched_Subject_mail_status status from ComposeMailWindow Action folder: Success
+delivery_confirmation_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+click_Home_button_status from ComposeMailWindow Action folder: Success
+New clear_search_text_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 10
+select_messages_status from MailMainPageElements PageElements folder: Success
+delete_messages_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+Folder_creation_status from MailMainPageElements PageElements folder: Success
+launch_MailApp_status from OutlookMainPageElements PageElements folder: Success
+New_Mailbox_option_click_status from OutlookMainPageElements PageElements folder: Success
+Folder_creation_status from OutlookMainPageElements PageElements folder: Success
+launch_MailApp_status from OutlookMainPageElements PageElements folder: Success
+New_Mailbox_option_click_status from OutlookMainPageElements PageElements folder: Success
+Folder_creation_status from OutlookMainPageElements PageElements folder: Success
+New_Mailbox_option_click_status from OutlookMainPageElements PageElements folder: Success
+Folder_creation_status from OutlookMainPageElements PageElements folder: Success
+Matched_messages_count 10
+Matched_messages_count 10
+Matched_messages_count 10
+Matched_messages_count 10
+launch_MailApp_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+Matched_messages_count 5
+select_messages_status from MailMainPageElements PageElements folder: Success
+New select_folder_status from MailMainPageElements PageElements folder: 
+New select_folder_status from MailMainPageElements PageElements folder: 
+
+----------------
+
+Script done on Sat Dec 29 01:20:47 2018

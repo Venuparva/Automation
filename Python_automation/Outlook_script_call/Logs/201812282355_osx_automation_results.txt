@@ -1,0 +1,170 @@
+Script started on Fri Dec 28 23:55:22 2018
+command: /Users/namithashetty/Documents/Outlook_automation/Outlook_script_call/python_script_call_outlook_3.sh
+TEST: opening 'Outlook_client_Automation'
+User provided From Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn1_auto_osx@icloud.comUser provided To Addr:ic1_may22_dgn1@icloud.comUser provided To Addr:ic1_dgn2_apr1@icloud.comUser provided body text:This is body of mail -DgnUser provided subj text:OSX : 29-Nov-18 : Single To/cc/bcc test mailUser provided attachment file path:Raft_auto_code/sunset.jpgUser provided folder text:test1LoginintoOutlook: Configuring the accounts using credentials using UserName:ic1_may22_dgn1@icloud.com and Password:avaq-kdyv-ssjq-nvek
+LoginintoOutlook: Launch Outlook Mail app got success
+
+OutlookMainPageElem: Problem in click_Outlook_icon_from_dock():UIAExceptionNoMousePoint - No mouse point available for object: UIADockItem_0x7ffe4fdc49a0 from target.dock().dockItems()["Microsoft Outlook"]LoginintoOutlook: Problem in opening click_Outlook_icon_from_dock Mail app 
+OSXMail - Outlook Account Configuration result : fail
+
+Outlook - Clean_up_account_result : pass
+-----------------------
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_dgn1_auto_osx@icloud.com & subj:Dec28150148:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: Problem in click_Outlook_icon_from_dock():UIAExceptionNoMousePoint - No mouse point available for object: UIADockItem_0x7ffe527c97c0 from target.dock().dockItems()["Microsoft Outlook"]LoginintoOutlook: Problem in opening click_Outlook_icon_from_dock Mail app 
+
+wbt-report : Outlook - Send_mail : fail
+-----------------------
+SavetoSentCheck: Check mail using subj:Dec28150148:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+SavetoSentCheck: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+SavetoSentCheck: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:Sent Messages
+Number of folders-1:11
+Looks like folders are already visible...no need to open it
+Current folder name text:alert and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:alert and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Searching "INBOX" and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Searching "INBOX" and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:INBOX • ic1_may22_dgn1@icloud.com and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Accounts and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Accounts and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Accounts and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:None and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:None and given folder name:Sent Messages
+Looks like folder selected is not matching...skipping it..proceed further
+Looks like none of folder selected is matching...return error
+
+SavetoSentCheck:Folder selection got failedFail
+wbt-report : Outlook - Save to Sent Folder : fail
+-----------------------
+CheckdeliveryinFolder: Check mail using subj:Dec28150148:OSX : 29-Nov-18 : Single To/cc/bcc test mail
+CheckdeliveryinFolder: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Number of folders-1:10
+Looks like folders are already visible...no need to open it
+Current folder name text:Inbox and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Drafts and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Sent Items and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Deleted Items and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Current folder name text:Junk E-mail and given folder name:INBOX
+Looks like folder selected is not matching...skipping it..proceed further
+Looks like none of folder selected is matching...return error
+
+SavetoSentCheck:Folder selection got failedFail
+wbt-report : Outlook - Check Mail delivery : fail
+-----------------------
+Main:Draft subject:Dec28150268:Save to drafts:
+SendMailtoSingleUserfromOutlook: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_dgn1_auto_osx@icloud.com & subj:Dec28150268:Save to drafts: & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+SendMailtoSingleUserfromOutlook: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+Looks like Home button already showing New mail iCon
+
+OutlookMainPageElem: click_NewMail_button action got success....
+SendMailtoSingleUserfromOutlook: click_NewMail_button open got success...Proceed further with entering receipient address details procedure below..
+SendMailtoSingleUserfromOutlook: to_addr is not Null and proceed further
+SendMailtoSingleUserfromOutlook: from_addr contains iCloud.com in it...proceed further
+SendMailtoSingleUserfromOutlook: To_addr_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: subj is not Null and proceed further
+SendMailtoSingleUserfromOutlook: Subj_text_enter_result_status open got success...Proceed further with entering further details procedure below..
+SendMailtoSingleUserfromOutlook: body is not Null and proceed further
+Body of mail:This is body of mail -Dgn
+ComposeMailWindow: Problem in entering body_text field
+SendMailtoSingleUserfromOutlook: Problem in entering the Body_addr_enter_result_status page...Please check it Manually
+
+wbt-report : Outlook - Save_To_Draft : fail
+-----------------------
+ForwardMail: Composing the mail using from_addr:ic1_may22_dgn1@icloud.com & to_addr:ic1_dgn1_auto_osx@icloud.com & subj:Dec28150148:OSX : 29-Nov-18 : Single To/cc/bcc test mail & body:This is body of mail -Dgn & attachment:Raft_auto_code/sunset.jpg 
+ForwardMail: launch_MailApp_status open got success...Proceed further with entering receipient address details procedure below..
+
+OutlookMainPageElem: click_Outlook_icon_from_dock action got success....
+LoginintoOutlook: Launch click_Outlook_icon_from_dock Mail app got success
+
+OutlookMainPageElem:Inside select_folder_element element:INBOX
+Recording test result: FAILED
+Found crashlog with existing radars (rdar://problems/42507645&44786465&44811150&44970160): /Users/namithashetty/Library/Logs/DiagnosticReports/xcodebuild_2018-12-28-235530-1_OSXautomachine-3.crash
+Found crashlog with existing radars (rdar://problems/42507645&44786465&44811150&44970160): /Users/namithashetty/Library/Logs/DiagnosticReports/xcodebuild_2018-12-28-235530_OSXautomachine-3.crash
+Recording test result: FAILED
+TEST: closing 'Outlook_client_Automation'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Raft.framework/Versions/A/lib/raft.zip/raft/core/decorate.py", line 177, in autorelease_wrapper
+  File "/Users/namithashetty/Documents/Outlook_Automation/Raft_auto_code/Outlook_client_Automation.raft/Contents/MacOS/__init__.py", line 206, in runTest
+    Forward_mail_result = Outlookclient.Actions.ForwardMail.forward_mail(from_addr,to_addr,subject,body_of_mail,attachment_file_path)
+  File "/Users/namithashetty/Library/Raft/raftlibs/Outlookclient/Actions/ForwardMail.py", line 34, in forward_mail
+    Folder_selection_res_status = Outlookclient.PageElements.OutlookMainPageElements.select_folder_element("INBOX")
+  File "/Users/namithashetty/Library/Raft/raftlibs/Outlookclient/PageElements/OutlookMainPageElements.py", line 632, in select_folder_element
+    target.processes()["Microsoft Outlook"].mainWindow().outlines()[0].visibleRows()[0].click()
+error: kUIAExceptionInvalidElement - No mouse point for invalid element: UIANil_0x7ffe53143090 from target.processes()["Microsoft Outlook"].mainWindow().outlines()
+***********************************
+script result-1
+----------------
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Logout action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+This is Login action file from Actions folder
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+launch_MailApp_status status from ComposeMailWindow Action folder: Success
+
+----------------
+
+Script done on Fri Dec 28 23:58:59 2018

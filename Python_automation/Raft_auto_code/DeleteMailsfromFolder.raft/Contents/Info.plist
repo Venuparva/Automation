@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>50652DB1-7198-4ED0-9C26-D9A921ED7618</string>
+	<key>CFBundleName</key>
+	<string>DeleteMailsfromFolder</string>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+</dict>
+</plist>
